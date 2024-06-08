@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    background-image: url('./pit5.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #800080;
+    padding-bottom: 10px;
+  }
+
+  .skills ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .skills ul li {
+    margin-bottom: 10px;
+  }
+
+  .project {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  .project-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .project-description {
+    margin: 0;
+  }
+
+  .divider {
+    border-top: 2px solid #800080;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .header {
+    background-color: #f8f8f8;
+    color: #000;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-image: url('/pit4.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .main-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .card {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin: 20px;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .card::before {
+    content: "";
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    background-color: #FC8181;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    z-index: -1;
+  }
+
+  .image {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 4px solid #FC8181;
+    margin-top: -60px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .card-info {
+    transition: all 0.3s ease;
+  }
+
+  .card-info span {
+    font-weight: 600;
+    font-size: 24px;
+    color: #161A42;
+    margin-top: 15px;
+  }
+
+  .card-info p {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .personal-info {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .personal-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .personal-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .skills {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .skills h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .skills ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .skills li {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">Portafolio</div>
+  </div>
+  
+  <div class="container">
+    <div class="card-container">
+      <div class="card">
+        <div class="image">
+          <img src="/pit10.jpeg" alt="Foto de perfil">
+        </div>
+        <div class="card-info">
+          <span>Felipe Castillo G</span>
+          <p>Desarrollador Frontend</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="personal-info">
+      <h1>Felipe Castillo G.</h1>
+      <p>Estudiante de Desarrollo de Software en la Universidad Tecnológica de Pereira</p>
+      <p>Correo electrónico: felipe.castillo1@utp.edu.co</p>
+    </div>
+    
+    <div class="skills">
+      <h2>Conocimientos en:</h2>
+      <ul>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+    </div>
+
+    <div class="divider"></div>
+    
+    <div class="section-title">Habilidades</div>
+    <div class="skills">
+      <ul>
+        <li>Desarrollo de paguinas web</li>
+        <li>Experiencia en desarrollo de juegos 2D</li>
+        <li>Manejo de bases de datos</li>
+      </ul>
+    </div>
+    
+    <div class="divider"></div>
+    
+    <div class="section-title">Proyectos Destacados</div>
+    <div class="project">
+      <div class="project-title">Paguina web De compras</div>
+      <p class="project-description">Utilizando html,css,phyton y java script se realizo la creacion de una pagina web de compras con su respectivo carrito de compras y con base a una base de datos en Mysql</p>
+    </div>
+    <div class="project">
+      <div class="project-title">Video juego 2D</div>
+      <p class="project-description">Se Utilizando exclusivamente phyton se realizon un video juego de peleas en 2D con sus respectivos 2 personajes </p>
+    </div>
+  </div>
+</body>
+</html>
+
+
