@@ -22,6 +22,18 @@ const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
 const overlay = document.querySelector("[data-overlay]");
 
+if (modalContainer && modalCloseBtn && overlay) {
+  modalCloseBtn.addEventListener("click", () => {
+    modalContainer.classList.remove("active");
+    overlay.classList.remove("active");
+  });
+
+  overlay.addEventListener("click", () => {
+    modalContainer.classList.remove("active");
+    overlay.classList.remove("active");
+  });
+}
+
 // modal variable
 const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
